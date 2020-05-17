@@ -4,14 +4,13 @@
 body{
 	position: relative;
     margin: 0;
-    padding-bottom: 6rem;
     min-height: 100%;
 	/*background-repeat: no-repeat;*/
 
 }
 html, body{height:100%; margin:0;}
-header{height:50px;}
-footer{height:50px;}
+header{}
+footer{}
 .home-bg{
 	background-image: url("background_Home.jpg");
 }
@@ -348,4 +347,8 @@ div.content {
 
 #content-wrap {
   padding-bottom: 2.5rem;    /* Footer height */
+}
+.found-image:hover{
+  -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
+  filter: blur(1px);
 }
