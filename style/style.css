@@ -2,7 +2,10 @@
   box-sizing: border-box;
 }
 body{
-	
+	position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
 	/*background-repeat: no-repeat;*/
 
 }
@@ -22,6 +25,7 @@ background-image: url("collegeBackground.jpg");
 	max-width: 90%;
 	margin: 0 auto;
 	padding-top:40px;
+
 
 }
 .mainSubject{
@@ -293,75 +297,7 @@ div.content {
 	text-align:left;
 }
 
-.footer {
 
-  height: 120px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color:rgba(51,51,51,0.4);
-  color: white;
-  text-align: center;
-  position: relative;
-}
-.footer .social-media {
-    display: flex;
-    width: 450px;
-    margin: 0 auto;
-}
-
-.footer .social-media > li {
-    list-style: none;
-    display: inline-block;
-    margin: 10px auto;
-    font-size: 20px;
-    padding: 10px 10px;
-}
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  max-width:100%;
-  border-radius: 50%;
-  text-decoration: none;
-}
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-}
-
-/* Set a specific color for each brand */
-
-.social-media li a
-{
-width: 4.25rem;
-height: 4.25rem;
-min-width: 4.25rem;
-min-height: 4.25rem;
-}
-
-.fa-facebook {
-   background: #3B5998;
-
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-.fa-reddit {
-  background: #ff5700;
-  color: white;
-}
 
 
 .row {
@@ -376,7 +312,7 @@ min-height: 4.25rem;
 .column {
   -ms-flex: 25%; /* IE10 */
   flex: 25%;
-  max-width: 25%;
+  max-width: 20%;
   padding: 0 4px;
 }
 
@@ -402,4 +338,13 @@ min-height: 4.25rem;
     flex: 100%;
     max-width: 100%;
   }
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
 }
