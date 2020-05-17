@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="college-bg">
+<head >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+<div class ="mainHead">
+  <h1>Jessica Clara Fealy - University</h1>
+</div>
+
+<div class="topnav" id="myTopnav">
+  <a href="Home.html">Home</a>
+  <a href="College.html">College</a>
+  
+  <a href="University.html" class="active">University</a>
+  <a href="Experience.html">Experience</a>
+  <a href="contactMe.html">Contact Me</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div class="sidebar">
+  <a href="#news">Foundation</a>
+  <a href="#contact">Year One</a>
+  <a href="#about">Year Two</a>
+  <a href="#about">Year Three</a>
+</div>
+<div id="wrapper">
+<div class="content">
+<h2>My University Experience</h2>
+<p1>My time at college I completed a year of AS level Physics and 2 years of A Level Computer Science and A Level Use Of Maths.<br/><br/>
+During the duration of my computer science course I was required to complete a year long project. This project could be based to any criteria as long as we used an object-oriented language and approach to create the solution providing a report and solution as the final product. Doing this project, I developed a solar system simulator using C#.<br/><br/>
+This project was the first lengthy project that I had undertaken in programming, facing many hurdles and new ideas to overcome. At the time I was happy with the final solution I created, I can now look back at this solution to see methods in which the code can be improved to function more optionally and where features can be further developed.
+<br/>
+<br/>
+ </p1>
+ </div>
+</div>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
