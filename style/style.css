@@ -9,8 +9,7 @@ body{
 
 }
 html, body{height:100%; margin:0;}
-header{}
-footer{}
+
 .home-bg{
 	background-image: url("background_Home.jpg");
 }
