@@ -12,6 +12,9 @@ body{
 .college-bg{
 	background-image: url("collegeBackground.jpg");
 }
+.universtiy-bg{
+background-image: url("collegeBackground.jpg");
+}
 #wrapper{
 	max-width: 90%;
 	margin: 0 auto;
