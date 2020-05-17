@@ -319,7 +319,7 @@ div.content {
 .fa {
   padding: 20px;
   font-size: 30px;
-
+max-width:100%;
   border-radius: 50%;
   text-decoration: none;
 }
