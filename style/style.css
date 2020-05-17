@@ -6,6 +6,9 @@ body{
 	/*background-repeat: no-repeat;*/
 
 }
+html, body{height:100%; margin:0;}
+header{height:50px;}
+footer{height:50px;}
 .home-bg{
 	background-image: url("background_Home.jpg");
 }
@@ -19,7 +22,7 @@ background-image: url("collegeBackground.jpg");
 	max-width: 90%;
 	margin: 0 auto;
 	padding-top:40px;
-	 
+
 }
 .mainSubject{
 	text-align:center;
@@ -284,4 +287,68 @@ div.content {
     text-align: center;
     float: none;
   }
+}
+
+
+
+.footer {
+
+  height: 120px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:rgba(51,51,51,0.4);
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.footer .social-media {
+    display: flex;
+    width: 450px;
+    margin: 0 auto;
+}
+
+.footer .social-media > li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px auto;
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+
+  border-radius: 50%;
+  text-decoration: none;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+
+.fa-facebook {
+   background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-reddit {
+  background: #ff5700;
+  color: white;
 }
