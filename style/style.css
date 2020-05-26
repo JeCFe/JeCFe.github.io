@@ -487,7 +487,11 @@ input[type=submit] {
 /*Social media end*/
 
 
-
+.name:hover{
+color:#FF6EC7;
+font-family: 'Dancing Script', cursive;
+font-size: 125%
+}
 
 
 .text-box{
@@ -503,3 +507,22 @@ input[type=submit] {
 	border-color:#F57D7F;
 	border-opacity: .4;
 	}
+	
+.download-link{
+max-width:100%;
+text-align:center;
+background-color:red;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius:10px;
+
+}
+
+.download-link:hover{
+
+opacity:0.5;
+}
+
+.download-box{
+text-decoration: none;
+}
