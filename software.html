@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="universtiy-bg" lang='en-GB'>
+<head>
+<title>Software Development Fundermentals</title>
+<meta name ='title' content='Software Development Fundermentals'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style/style.css">
+
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+
+<div class ="mainHead">
+  <h1>Jessica Clara Fealy - Software Development Fundermentals</h1>
+</div>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="College.html">College</a>
+  
+  <a href="University.html" class="active">University</a>
+  <a href="Experience.html">Experience</a>
+  <a href="contactMe.html">Contact Me</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div class="sidebar">
+  <a href="foundation.html" class="active">Foundation</a>
+  <a href="#contact">Year One</a>
+  <a href="#about">Year Two</a>
+  <a href="#about">Year Three</a>
+</div>
+<div id="wrapper">
+<div class="content">
+<div class="text-box">
+<h2>Overview</h2>
+<p1> 
+The purpose of this module was an introduction to object-oriented programming using C#. The beginning of the module began with very basic teaching of how to set up a procedural project with no functions. The module then proceeded to teach the use of data types and functions. <br/>
+Software development was used to only teach the fundamentals of OOP languages, yet we did not touch upon polymorphism or recursion.  <br/>
+This module didn’t teach me any principle that were not taught throughout my A-Level computer science, but this module did reassert the knowledge I already had
+
+</p1>
+</div>
+
+<div class="text-box">
+<h2>Assessments</h2>
+<p1>
+This module consisted of 2 assignment waited 45% for the first and 55% for the second<br/>
+I achieved an overall grade of 89%. 
+
+</p1>
+</div>
+<div class="text-box">
+<h2>First Assignment</h2>
+<p1><br/> The requirements of this assignment was to construct a game with similar rule set to the game Hammurabi.<br/>
+I wrote a post nuclear apocalyptic Hammurabi clone, which I named Survivors. 
+<br/>Concepts of Survivors:
+<ul style="text-align:left">
+<li>Resources replace grain</li>
+<li>At the beginning of each day you must decide how much resources to feed the population. Feeding too little will cause people to die by the next day, overfeeding does little to nothing</li>
+<li>To gather resource you can send people out to gather resources in teams of 2. Sending out will result in random resources being found, or even more people being found. However, you risk losing resources or people doing so</li>
+<li>If no people remain in the camp then game is over</li>
+<li>You can build radiation kits, these will cure all radiation a person has. A random event can happen which can kill a percentage of the population unless they are given radiation kits</li>
+<li>If you survive 10 days then everyone alive will be rescued and the game will end</li>
+</ul>    
+<br/>
+For this assignment I achieved 98% where I dropped the final 2% for very minor oversights.<br/>
+Below you can find my submission document with testing, and a download link for a zipped version of the game.
+</p1>
+<br/><br/>
+<a href="download/software/SurvivorsDoc.docx" download="SurvivorsDoc.docx" target="_blank" class="download-box">
+<div class="download-link">
+    <p1>Submission document</p1>
+	</div>
+</a>
+<a href="download/software/Survivors.zip" download="Survivors.zip" target="_blank" class="download-box" ">
+<div class="download-link" style="margin-top:10px;">
+    <p1>Survivors</p1>
+	</div>
+</a>
+</div>
+ </div>
+
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
