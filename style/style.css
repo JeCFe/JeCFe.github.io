@@ -343,14 +343,7 @@ div.content {
   }
 }
 
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
 
-#content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
-}
 .found-image:hover{
   -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
   filter: blur(1px);
@@ -530,3 +523,17 @@ opacity:0.5;
 text-decoration: none;
 }
 
+.Footer{
+bottom:0;
+
+max-width:100%;
+
+}
+.footer-container
+{
+	bottom:0;
+	position: relative;
+	width:100%;
+	text-align: center;
+	background-color: red;
+}
