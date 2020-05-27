@@ -19,6 +19,9 @@ html, body{height:100%; margin:0;}
 .universtiy-bg{
 background-image: url("collegeBackground.jpg");
 }
+.software-bg{
+background-image: url("software-background.png");
+}
 #wrapper{
 	max-width: 90%;
 	margin: 0 auto;
@@ -515,7 +518,7 @@ background-color:red;
 padding-top: 10px;
 padding-bottom: 10px;
 border-radius:10px;
-
+margin-top:10px;
 }
 
 .download-link:hover{
@@ -526,3 +529,4 @@ opacity:0.5;
 .download-box{
 text-decoration: none;
 }
+
