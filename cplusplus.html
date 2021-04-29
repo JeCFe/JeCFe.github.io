@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="universtiy-bg" lang='en-GB'>
+<head>
+<title>C++ Programming</title>
+<meta name ='title' content='C++ Programming'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style/style.css">
+
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+ 
+
+<div class ="mainHead">
+  <h1>Jessica Clara Fealy - C++ Programming</h1>
+</div>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="College.html">College</a>
+  
+  <a href="University.html" class="active">University</a>
+  <a href="Experience.html">Experience</a>
+  <a href="contactMe.html">Contact Me</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div class="sidebar">
+  <a href="foundation.html" >Foundation</a>
+  <a href="yearOne.html" class="active">Year One</a>
+  <a href="yearTwo.hmtl">Year Two</a>
+  <a href="yearThree.html">Year Three</a>
+</div>
+<div id="wrapper">
+<div class="content">
+<div class="text-box">
+<h2>Overview</h2>
+<p1> 
+This module granted further experience and knowlegde into object oriented programming languages, specifically C++.
+</p1>
+</div>
+<div class="text-box">
+<h2>Topics dicussed: </h2>
+<p1>
+<ul class="Found-list">
+<li>Conditional statements and loops</li>
+<li>Class and objects</li>
+<li>Data storage containers</li>
+<li>Searching and sorting algorithms  </li>
+<li>Pointers </li>
+<li>Software design documents (UML) </li>
+<li>C-Strings </li>
+<li>Advanced file operations </li>
+<li>Recursion </li>
+<li>Polymorphism and virtual functions </li>
+<li>Standard template library </li>
+<li>Linked lists</li>
+<li>Stacks and queues</li>
+<li>Trees</li>
+</ul>
+</p1>
+</div>
+<div class="text-box">
+<h2>Assessments</h2>
+<p1>
+Average grade: 
+C++ programming was assessed via 4 assignments. The purpose of these assignments were to test on various object oriented programming techniques.
+
+</p1>
+</div>
+<div class="text-box">
+<h2>Computational Thinking</h2>
+<br/><br/>
+<a href="download/cplusplus/ComputationalThinking.docx" download="ComputationalThinking.docx" target="_blank" class="download-box">
+<div class="download-link">
+    <p1>Computational Thinking Answers</p1>
+	</div>
+		</a>
+</div>
+
+<div class="text-box">
+<h2>BMI Calculator</h2>
+<br/><br/>
+<a href="download/cplusplus/BMICalculator.zip" download="BMICalculator.zip" target="_blank" class="download-box">
+<div class="download-link">
+    <p1>BMI Calculator Project</p1>
+	</div>
+		</a>
+<a href="download/cplusplus/BMIReport.docx" download="BMIReport.docx" target="_blank" class="download-box">
+<div class="download-link">
+    <p1>BMI Report</p1>
+	</div>
+		</a>
+</div>
+
+<div class="text-box">
+<h2>Object oriented system for a garage</h2>
+<br/><br/>
+<a href="download/cplusplus/Garage/GarageCourseWork.zip" download="GarageCourseWork.zip" target="_blank" class="download-box">
+<div class="download-link">
+    <p1>Garage Project</p1>
+	</div>
+		</a>
+<a href="download/cplusplus/Garage/UML.pdf" download="UML.pdf" target="_blank" class="download-box">
+<div class="download-link">
+    <p1>Garage UML Document</p1>
+	</div>
+		</a>
+<a href="download/cplusplus/Garage/Use Cases.pdf" download="Use Cases.pdf" target="_blank" class="download-box">
+<div class="download-link">
+    <p1>Garage Use Cases Document</p1>
+	</div>
+		</a>
+</div>
+<div class="text-box">
+<h2>Programmng challanges and questions</h2>
+<br/><br/>
+<a href="download/cplusplus/CPP/Answers.odt" download="Answers.odt" target="_blank" class="download-box">
+<div class="download-link">
+    <p1>Answers</p1>
+	</div>
+		</a>
+<a href="download/cplusplus/CPP/Coursework4.zip" download="Coursework4.zip" target="_blank" class="download-box">
+<div class="download-link">
+    <p1>Programming answers</p1>
+	</div>
+		</a>
+</div>
+ </div>
+
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
